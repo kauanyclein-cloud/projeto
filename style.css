@@ -27,3 +27,100 @@ article {
     /* Configuração de crescimento, encolhimento e largura base (~3 a 4 cards por linha) */
     flex: 1 1 25%;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Estilização do Header */
+header {
+    background-color: #123055;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Estilização do Container Principal */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilização dos Cards */
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    
+    border: 1px solid #183C63;
+    margin: 16px;
+    padding: 24px 16px;
+    gap: 12px;
+    
+    flex: 1 1 280px;
+    max-width: 350px;
+}
+
+article img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+article h2 {
+    color: #183C63;
+    font-size: 1.4rem;
+}
+
+article h3 {
+    color: #333333;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+article p {
+    color: #444444;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.fonte {
+    font-size: 0.85rem;
+    color: #555555;
+}
+
+/* Botões de reação */
+.botoes {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.botoes button {
+    background-color: #f0f0f0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 4px 12px;
+    cursor: pointer;
+}
