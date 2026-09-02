@@ -1,1 +1,29 @@
+/* Ajusta a largura total da página */
+body {
+    max-width: 100vw;
+}
 
+/* Transforma o container dos posts em Flexbox e permite quebra de linha */
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estiliza os cards de cada postagem */
+article {
+    /* Ativa o Flexbox e organiza o conteúdo interno em coluna centralizada */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    /* Borda e espaçamentos (interno e externo) */
+    border: 1px solid #183C63;
+    margin: 16px;
+    gap: 16px;
+    padding: 16px;
+
+    /* Configuração de crescimento, encolhimento e largura base (~3 a 4 cards por linha) */
+    flex: 1 1 25%;
+}
